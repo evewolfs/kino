@@ -1,0 +1,546 @@
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+@import 'mikrono';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: #ffffff !important;
+    font-family: $font-stack;
+    width:100%;
+    padding:2%;
+    color:$primary-color;
+
+}
+
+html {
+    height: 100%;
+    width:100%;
+
+  }
+
+  #logo {
+	img {
+		height: 30px;
+		margin-bottom: 1%;
+	}
+}
+
+.lang-nav {
+	float: right;
+	a{	
+		@extend %font-thin;
+		font-size: 13px;
+		color: $primary-color;
+		font-weight: 400;
+		font-style: normal;
+
+
+		&:hover {
+			color: $hover-color;
+			
+		}
+		&:active {
+			color: $primary-color;
+		
+		}
+		&:link {
+			color: $primary-color;
+			
+		}
+		&:visited {
+			color: $primary-color;
+			
+		}
+		
+		
+	}
+}
+
+.navbar-inner {
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+form {
+	@extend %font-thin;
+	font-size: 14px;
+}
+
+.navbar.transparent.navbar-inverse {
+	#text{
+		@extend %font-thin;
+	
+	font-size: 12px;
+	color: $primary-color;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	}
+	.navbar-inner {
+		background: rgba(0,0,0,0);
+
+		
+	}
+	
+}
+.logo {
+	img {
+		height: 30px;
+		margin-bottom: 1%;
+	}
+}
+.navbar-inner {
+	width: 100%;
+}
+
+form {
+	@extend %font-thin;
+	font-size: 14px;
+	
+}
+
+select {
+	@extend %font-thin;
+	text-align: right;
+	border-radius: 24px;
+	padding: 5px;
+	font-weight: 400;	
+	-webkit-appearance: none !important;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: transparent !important;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 0.5px solid $secondary-color;
+
+	#select {
+	font-size: 14px;
+	background-color: transparent !important;
+	color: $primary-color;
+	cursor: pointer;
+	border: none;
+}
+	&::-ms-expand {
+		display: none;
+	}
+		&:hover {
+		border-color: $hover-color;
+	}
+}
+#custom-select {
+	background-color: transparent !important;
+	font-size: 24px;
+	font-weight: 400;
+	display: inline;
+	border: 0.5px solid $secondary-color;
+}
+option {
+	font-size: 14px;
+}
+
+.logo-home {
+	img {
+		height: 40px;
+		margin-bottom: 1%;
+	}
+}
+
+.logo-title {
+	font-family: $font-stack;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	margin-bottom: 1%;
+	color: $primary-color;
+}
+
+.logo-address {
+	font-family: $font-stack;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	margin-bottom: 1%;
+	color: $primary-color;
+}
+
+.home-layout {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 7%;
+	
+}
+.home-container {
+	width: 30%;
+	border-radius: 10px;
+	padding: 2%;
+	padding-bottom: 3%;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 0.5px solid $secondary-color;
+}
+
+
+.container-fluid {
+	padding:0;
+}
+
+.home-text {
+	font-size: 18px;
+	font-weight: 400;
+	margin: 1%;
+	color: $primary-color;
+	text-align: center;
+	font-family: $font-stack;
+	font-style: normal;
+}
+
+
+.mikrono-box {
+	background-color: $light-color;
+	padding: 0;
+	margin: 0;
+
+}
+
+
+.doctor-picture {
+	border-radius: 50%;
+	width: 7vw;
+	height: 7vw;
+}
+
+
+.doctor-name {
+	font-family: $font-stack;
+	font-weight: 400;
+	font-size: 32px;
+	margin-top: 10px;
+	color: $primary-color;
+
+	
+}
+
+.doctor-job {
+	@extend %font-thin;
+	font-weight: 300;
+	font-size: 24px;
+	color: $primary-color;
+	margin-bottom: 15px;
+}
+
+.doctor-school {
+	@extend %font-thin;
+	font-size: 12px;
+}
+
+.doctor-phone {
+	@extend %font-thin;
+	text-decoration: none;
+	font-size: 14px;
+	color: $primary-color;
+	font-weight: 400;
+	font-style: normal;
+	
+
+	i{
+		font-style: normal;
+		padding-right: 3%;
+		text-decoration: none;
+		
+		&:hover {
+			color: $hover-color;
+			text-decoration: none;
+		}
+
+		&::before
+		{font-size: 22px;
+		color: $primary-color;
+		position: relative;
+		margin-bottom: 2px;
+		text-decoration: none;
+	}
+
+	}
+
+	a{	
+		color: $primary-color;
+		&:hover {
+			color: $hover-color;
+			text-decoration: none;
+		}
+		&:active {
+			color: $primary-color;
+			text-decoration: none;
+		}
+		&:link {
+			color: $primary-color;
+			text-decoration: none;
+		}
+		&:visited {
+			color: $primary-color;
+			text-decoration: none;
+		}
+		
+	}
+	
+
+}
+
+
+.doctor-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+}
+
+.doctor-icons-home {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 3%;
+	
+}
+
+.doctor-icon-container-home {
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.doctor-icon-container {
+	margin-right: 40px;
+
+}
+
+.icon-box {
+	h6 {
+		&:hover {
+			text-decoration: none;
+			color: $hover-color;
+	
+		}
+		
+		font-family: $font-stack !important;
+		font-weight: 400 !important;
+		font-size: 12px;
+		color: $primary-color;
+		text-decoration: none !important;
+		margin-top: 5px;
+		text-align: center;
+		font-style: normal;
+	}
+	i {
+		&:hover {
+			text-decoration: none;
+			color: $hover-color;
+		}
+		&::before{	font-size: 18px;}
+	
+		margin: 1%;
+		text-align: center;
+		text-decoration: none;
+		color: $primary-color;
+	}
+	a {
+		&:hover {
+			text-decoration: none;
+			color: $hover-color;
+		}
+		&:link {
+			text-decoration: none;
+		}
+		&:active {
+		text-decoration: none;
+		}
+		&:visited {
+	text-decoration: none;
+		}
+	}
+}
+
+.doctor-spec-title {
+	@extend %font-thin;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	color: $primary-color; 
+	a{
+		&:hover {
+				text-decoration: none;
+		}
+		&:link {
+			text-decoration: none;
+		}
+		&:active {
+		text-decoration: none;
+		}
+		&:visited {
+	text-decoration: none;
+		}
+	}
+
+}
+
+.doctor-description {
+	@extend %font-thin;
+	font-size: 16px;
+	
+}
+
+#line-text {
+	height:2px;
+	border-width:1px;
+	color:$primary-color;
+	background-color: $light-color;
+}
+
+
+
+// %global-type {
+// 	font-style: normal;
+// 	font-size: 50px;
+// 	margin-top: 20px;
+// }
+
+
+// .type-one {
+// 	@extend %global-type;
+// 	font-family: iskra, sans-serif !important;
+// 	font-weight: 200;
+// 	font-size: 15px;
+	
+// }
+
+// .type-three {
+// 	@extend %global-type;
+// 	font-family: brandon-grotesque,sans-serif !important;
+// font-weight: 300;
+// font-size: 15px;
+
+// }
+
+// .type-four {
+// 	@extend %global-type;
+// 	font-family: circe,sans-serif !important;
+// font-weight: 300;
+// font-size: 15px;
+
+// }
+
+// .type-five {
+// 	@extend %global-type;
+// 	font-family: filson-pro, sans-serif !important;
+// 	font-weight: 400;
+// 	font-size: 15px;
+
+// }
+
+// .type-six {
+// 	@extend %global-type;
+// 	font-family: source-serif-4,serif !important;
+// 	font-weight: 200;
+// 	font-size: 15px;
+
+// }
+
+@media screen and (max-width: 600px) {
+
+	button {
+		font-size: 12px;
+	}
+
+	.lang-nav{
+		font-size: 20px !important;
+		align-self: flex-end;
+	}
+
+	#select {
+		margin-top: 2%;
+		text-align: center;
+		font-family: $font-stack;
+		font-weight: 400;
+		font-style: normal;
+	}
+	.navbar-inner {
+		width: 100%;
+		display:flex;
+		flex-flow:column;
+		align-items:center;
+	
+	}
+	.logo {
+		img {
+			width: 95%;
+			// margin-left: 6%;
+		}
+	}
+	.logo-home {
+		img {
+			width: 60%;
+			align-items: center;
+		}
+	}
+
+	.container {
+		width: 100%;
+		padding:4%;
+	}
+
+	.home-layout {
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+		top: 50%;
+		left: 50%;
+		margin-top: 10%;
+	}
+	.home-container {
+		width: 80%;
+		border-radius: 10px;
+		padding: 10%;
+		padding-bottom: 12%;
+		margin: 0 auto;
+	}
+	.home-text {
+		font-size: 16px;
+		line-height: normal;
+		text-align: center;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.doctor-name {
+		font-size: 21px;
+	
+	}
+	.doctor-job {
+		font-size: 18px;
+		
+	}
+	.doctor-description {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.doctor-picture {
+		width: 20vw;
+		height: 20vw;
+		
+	}
+
+	#mikrono {
+		padding: 0%;
+		height: 100%;
+		width:100%;
+		margin: 0px;
+	}
+}
